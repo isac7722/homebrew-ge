@@ -5,20 +5,20 @@
 class Ge < Formula
   desc "Git Extension CLI — multi-account, worktree, and branch management"
   homepage "https://github.com/isac7722/git-extension"
-  version "2.7.2"
+  version "2.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/isac7722/git-extension/releases/download/v2.7.2/git-extension_2.7.2_darwin_amd64.tar.gz"
-      sha256 "19fb5ea5c61d47882c7cf7fb967364abff71f9c7202cdcf24a8bbb15a7c5dcb2"
+      url "https://github.com/isac7722/git-extension/releases/download/v2.8.0/git-extension_2.8.0_darwin_amd64.tar.gz"
+      sha256 "12eee4a37ed943a29a8f22bc7e560535fd942be2e8c2f60c5fd2db0eb6ef99b5"
 
       define_method(:install) do
         bin.install "ge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/isac7722/git-extension/releases/download/v2.7.2/git-extension_2.7.2_darwin_arm64.tar.gz"
-      sha256 "de7da40f67fed689b89ce398593f1546f927a762effc7a93fed390f93b80eefa"
+      url "https://github.com/isac7722/git-extension/releases/download/v2.8.0/git-extension_2.8.0_darwin_arm64.tar.gz"
+      sha256 "7a2193bb36e29a67d2d478f27397f1417c04665f8eaa00f1f8ab39c877d37a0d"
 
       define_method(:install) do
         bin.install "ge"
@@ -28,15 +28,15 @@ class Ge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/isac7722/git-extension/releases/download/v2.7.2/git-extension_2.7.2_linux_amd64.tar.gz"
-      sha256 "f96311098953475ef88831de0d0e75b6ee9361cd8c02cc23a1e86aa9703e391b"
+      url "https://github.com/isac7722/git-extension/releases/download/v2.8.0/git-extension_2.8.0_linux_amd64.tar.gz"
+      sha256 "12493120d804848335df1d5bdf9c89caece58f170808a231d892e94a6dae29a2"
       define_method(:install) do
         bin.install "ge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/isac7722/git-extension/releases/download/v2.7.2/git-extension_2.7.2_linux_arm64.tar.gz"
-      sha256 "162559b8e34d6c02a9bac421557148dc97eb348264d36240aa6dde314b935816"
+      url "https://github.com/isac7722/git-extension/releases/download/v2.8.0/git-extension_2.8.0_linux_arm64.tar.gz"
+      sha256 "08fbe7679dc8540bd984f956c42a3cbd6580f44c8c2403cf5d7c8158ead9c8f1"
       define_method(:install) do
         bin.install "ge"
       end
